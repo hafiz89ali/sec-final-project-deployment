@@ -17,7 +17,7 @@ const database = new Client({
   max: 20,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 2000,
-  ssl: process.env.DB_SSL === "true",
+  ssl: process.env.DB_SSL,
 });
 
 async function testConnectionAndLog() {
